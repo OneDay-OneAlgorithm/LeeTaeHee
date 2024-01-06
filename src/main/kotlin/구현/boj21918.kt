@@ -5,7 +5,7 @@ package 구현
 fun main() {
 
     val (lightBulbCount, orderCount) = readln().split(" ").map { it.toInt() }
-    val bulbArray = readln().split(" ").toMutableList().map { it.toInt() }.toMutableList()
+    val bulbArray = readln().split(" ").map { it.toInt() }.toMutableList()
 
     for (i in 1..orderCount) {
         val (a, b, c) = readln().split(" ").map { it.toInt() }
