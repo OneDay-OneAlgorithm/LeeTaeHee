@@ -2,49 +2,75 @@ package 구현
 
 // 기적의 매매법
 
-fun main(){
+fun main() {
     val seed = readln().toInt()
     val stockList = readln().split(" ").map { it.toInt() }
 
-    println(timing(seed, stockList))
+    val bnpBudget = bnp(seed, stockList)
+    val timingBudget = timing(seed, stockList)
+
+    if (bnpBudget > timingBudget) println("BNP")
+    else if (bnpBudget < timingBudget) println("TIMING")
+    else println("SAMESAME")
 
 }
 
-fun bnp(seed : Int, list : List<Int>) : Int{
+fun bnp(seed: Int, list: List<Int>): Int {
     var savings = seed
     var stockCount = 0
 
     for (i in list.indices) {
         if (list[i] <= savings) {
-            stockCount = seed / list[i]
-            savings = seed % list[i]
+            stockCount += savings / list[i]
+            savings -= stockCount * list[i]
         }
     }
 
-    return list[list.size - 1] * stockCount
+    return savings + list.last() * stockCount
 }
 
-fun timing(seed : Int, list: List<Int>): Int{
+fun timing(seed: Int, list: List<Int>): Int {
     var savings = seed
     var stockCount = 0
+    var upCount = 0
+    var downCount = 0
 
-    for (i in 3 until list.size) {
-        if (list[i-3] > list[i-2] && list[i-2] > list[i-1] && list[i-1] <= savings){
-            val buyingStockCount = savings / list[i-1]
-            stockCount += buyingStockCount
-            savings -= list[i-1] * buyingStockCount
-        }
+    for (i in 1 until list.size) {
+        val presentStock = list[i]
+        val pastStock = list[i - 1]
 
+        when {
+            presentStock > pastStock -> {
+                upCount++
+                downCount = 0
+            }
 
-        if (list[i-3] < list[i-2] && list[i-2] < list[i-1]){
-            if (stockCount > 0) {
-                val sellingStockCount = stockCount
-                savings += sellingStockCount * list[i-1]
-                stockCount = 0
+            presentStock < pastStock -> {
+                upCount = 0
+                downCount++
+            }
+
+            else -> {
+                upCount = 0
+                downCount = 0
             }
         }
+
+        if (downCount >= 3) {
+            if (savings >= presentStock) {
+                val count = savings / presentStock
+                savings -= count * presentStock
+                stockCount += count
+            }
+        }
+
+        if (upCount >= 3 || i == list.size - 1) {
+            savings += stockCount * presentStock
+            upCount = 0
+            stockCount = 0
+        }
+
     }
 
-    savings += list.last() * stockCount
     return savings
 }
