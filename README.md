@@ -26,7 +26,7 @@
 | 1/18 | [16171](https://www.acmicpc.net/problem/16171) |    ✅     |
 | 1/19 | [27866](https://www.acmicpc.net/problem/27866) |    ✅     |
 | 1/20 |  [1212](https://www.acmicpc.net/problem/1212)  |    ✅     |
-| 1/21 |                                                |          |
+| 1/21 |  [5597](https://www.acmicpc.net/problem/5597)  |    ✅     |
 | 1/22 |                                                |          |
 | 1/23 |                                                |          |
 | 1/24 |                                                |          |
