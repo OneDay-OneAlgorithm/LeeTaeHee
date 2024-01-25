@@ -30,7 +30,7 @@
 | 1/22 | [13458](https://www.acmicpc.net/problem/13458) |    ✅     |
 | 1/23 | [11728](https://www.acmicpc.net/problem/11728) |    ✅     |
 | 1/24 | [10808](https://www.acmicpc.net/problem/10808) |    ✅     |
-| 1/25 |                                                |          |
+| 1/25 |  [1406](https://www.acmicpc.net/problem/1406)  |    ✅     |
 | 1/26 |                                                |          |
 | 1/27 |                                                |          |
 | 1/28 |                                                |          |
