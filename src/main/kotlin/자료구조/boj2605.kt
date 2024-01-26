@@ -1,15 +1,15 @@
 package 자료구조
 
-import java.util.*
-
 // 줄 세우기
 
 fun main() {
     val n = readln().toInt()
-    val students = LinkedList<Int>()
+    val students = ArrayList<Int>()
+    students.add(-1)
+
     val numbers = readln().split(" ").map { it.toInt() }
 
-    for (i in n - 1 downTo 0) students.add(numbers[i], i + 1)
+    for (i in 1..n) students.add(i - numbers[i - 1], i)
 
-    for (student in students) print("$student ")
+    for (i in 1..n) print("${students[i]} ")
 }
