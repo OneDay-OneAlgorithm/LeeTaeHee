@@ -4,14 +4,12 @@ import java.util.*
 
 // 줄 세우기
 
-fun main(args: Array<String>) = with(Scanner(System.`in`)) {
-    val N = nextInt()
+fun main() {
+    val n = readln().toInt()
     val students = LinkedList<Int>()
-    val numbers = IntArray(N)
+    val numbers = readln().split(" ").map { it.toInt() }
 
-    for(i in 0 until N) numbers[i] = nextInt()
+    for (i in n - 1 downTo 0) students.add(numbers[i], i + 1)
 
-    for(i in N-1 downTo 0) students.add(numbers[i], i+1)
-
-    for(student in students) print("$student ")
+    for (student in students) print("$student ")
 }
