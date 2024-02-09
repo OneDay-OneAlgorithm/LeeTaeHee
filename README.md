@@ -1,3 +1,5 @@
+![](https://api.mosu.blog/OneDay-OneAlgorithm/LeeTaeHee?since=2024-01-01)
+
 ## 1일 1알고리즘 표
 
 [백준 문제집](https://github.com/tony9402/baekjoon?tab=readme-ov-file) 구현, 그리디, 탐색, 자료구조 위주로 시작
