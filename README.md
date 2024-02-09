@@ -52,7 +52,7 @@
 | 2/6  |                                                |          |
 | 2/7  |  [2309](https://www.acmicpc.net/problem/2309)  |    ✅     |
 | 2/8  | [10448](https://www.acmicpc.net/problem/10448) |    ✅     |
-| 2/9  |                                                |          |
+| 2/9  |  [1182](https://www.acmicpc.net/problem/1182)  |    ✅     |
 | 2/10 |                                                |          |
 | 2/11 |                                                |          |
 | 2/12 |                                                |          |
