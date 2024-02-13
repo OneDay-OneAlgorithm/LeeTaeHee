@@ -56,7 +56,7 @@
 | 2/10 |  [4796](https://www.acmicpc.net/problem/4796)  |    ✅     |
 | 2/11 |  [1931](https://www.acmicpc.net/problem/1931)  |    ✅     |
 | 2/12 | [17509](https://www.acmicpc.net/problem/17509) |    ✅     |
-| 2/13 |                                                |          |
+| 2/13 |  [1780](https://www.acmicpc.net/problem/1780)  |    ✅     |
 | 2/14 |                                                |          |
 | 2/15 |                                                |          |
 | 2/16 |                                                |          |
