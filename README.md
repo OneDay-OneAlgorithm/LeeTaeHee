@@ -61,7 +61,7 @@
 | 2/15 | [11726](https://www.acmicpc.net/problem/11726) |    ✅     |
 | 2/16 |  [2512](https://www.acmicpc.net/problem/2512)  |    ✅     |
 | 2/17 |  [1932](https://www.acmicpc.net/problem/1932)  |    ✅     |
-| 2/18 |                                                |          |
+| 2/18 |  [1158](https://www.acmicpc.net/problem/1158)  |    ✅     |
 | 2/19 |                                                |          |
 | 2/20 |                                                |          |
 | 2/21 |                                                |          |
